@@ -1,0 +1,21 @@
+
+{% block heading %}
+    First Page
+{% endblock %}
+
+{% block body %}
+    <p>olalala obababa onana olululu</p>
+    <a href="{{ url_for("more") }}"> ..more</a>
+{% endblock %}
+
+{% block heading1 %}
+    First Page
+{% endblock %}
+
+{% block body1 %}
+    <form action="{{ url_for("hello") }}" method="post">
+        <input type="text" name="name" placeholder="Enter your name">
+        <button>Submit</button>
+    </form>
+{% endblock %}
+-->
