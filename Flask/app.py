@@ -19,5 +19,5 @@ def index():
     return render_template("index.html",notes=notes)
 
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()

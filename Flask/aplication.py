@@ -9,22 +9,17 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/')
-def index():
-    return render_template("index.html")
-
-
 @app.route('/bye')
 def bye():
-    headline = "goode bye"
-    return render_template("index.html",headline = headline)
+    headline = "good bye!"
+    return render_template("Variable.html", headline = headline)
 
 
 @app.route('/datetime')
 def datetime():
     now = datetime.timezone.now()
     new_year = now.month == 1 and  now.day == 1
-    return render_template("index.html",new_year = new_year)
+    return render_template("New_year.html",new_year = new_year)
 
 
 @app.route('/name')
